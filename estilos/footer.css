@@ -1,0 +1,46 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ece6f2;
+    padding: 2% 5%;
+}
+
+.listado-enlaces {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.footer-links-group {
+    .subtitle {
+        font-weight: 700;
+        font-size: 15px;
+        color: #4a1d62;        
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    .logo-sostenible {
+        width: 200px;
+    }
+
+    .img-medio-pago {
+        width: 80px;
+        margin-right: 5px;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.social-network-nav {
+    a {
+        color: #4a1d62;
+        font-size: 28px;
+    }
+}
