@@ -1,5 +1,4 @@
-# Título del Proyecto:
-**Ecommerce de calzado basado en Footloose**
+# Ecommerce de calzado basado en Footloose
 <br>
 Número del Grupo: 2
 <br>
