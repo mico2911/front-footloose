@@ -1,0 +1,35 @@
+.confirmation-order-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    text-align: center;
+    margin: 15px;
+
+    @media (min-width: 768px) {
+        border-bottom: 1px solid #8f8f8f;
+        padding: 20px 0;
+        margin: 50px;
+    }
+
+    img {
+        width: 200px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+        
+    }
+
+    .thanks-label {
+        color: #3e1151;
+        margin: 20px 0;
+    }
+
+    .instructions {
+        span {
+            display: block;
+        }
+    }
+   
+}
