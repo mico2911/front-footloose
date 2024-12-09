@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="estilos/general.css">
     <link rel="stylesheet" href="estilos/header.css">
     <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="estilos/login.css">
 </head>
 <body>
     <header>
@@ -54,8 +55,30 @@
             </nav>
         </section>
     </header>
-    <main>
-        Reemplazame Soy Inicio de sesión
+        <section class="flex-login">
+            <div class="flex-login-options">
+                <a class="home" href="/03_Home.html">
+                    <img class="img-logo"
+                      src="https://footloose.vtexassets.com/arquivos/ids/1369612/footloose-logo.svg" alt="Logo de Footlose">
+                </a>
+
+                <h2>Escoja una opción para entrar</h2>
+                <form>
+                    <input type="email" id="email" name="email" placeholder="Ej.: ejemplo@mail.com" required>
+
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+
+                    <button type="submit">Entrar</button>
+
+                    <p>¿No tienes cuenta? <a href="/01_Registro.html">Regístrate</a></p>
+                    <p>O inicia sesión con:</p>
+                    <button class="social-button google">Iniciar sesión con Google</button>
+                    <button class="social-button facebook">Iniciar sesión con Facebook</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <section class="col-12 col-lg-3">
@@ -90,7 +113,7 @@
                     <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403275/mastercardMethodFooter.png">
                     <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403273/americanMethodFooter.png">
                     <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403276/pagoEfectivoMethodFooter.png">
-                </div>                
+                </div>
             </div>
 
             <div class="footer-links-group mt-4">

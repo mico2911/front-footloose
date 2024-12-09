@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="estilos/general.css">
     <link rel="stylesheet" href="estilos/header.css">
     <link rel="stylesheet" href="estilos/footer.css">
-    <link rel="stylesheet" href="estilos/register.css">
+    <link rel="stylesheet" href="estilos/auth.css">
 </head>
 <body>
     <header>
@@ -55,30 +55,53 @@
             </nav>
         </section>
     </header>
-        <section class="flex-login">
-            <div class="flex-login-options">
-                <a class="home" href="/03_Home.html">
-                    <img class="img-logo"
-                      src="https://footloose.vtexassets.com/arquivos/ids/1369612/footloose-logo.svg" alt="Logo de Footlose">
-                </a>
-
-                <h2>Escoja una opción para entrar</h2>
-                <form>
-                    <input type="email" id="email" name="email" placeholder="Ej.: ejemplo@mail.com" required>
-
-                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
-
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-
-                    <button type="submit">Entrar</button>
-
-                    <p>¿No tienes cuenta? <a href="#">Regístrate</a></p>
-                    <p>O inicia sesión con:</p>
-                    <button class="social-button google">Iniciar sesión con Google</button>
-                    <button class="social-button facebook">Iniciar sesión con Facebook</button>
-                </form>
+    <main class="ingreso-registro">
+        <section class="form-items">
+            <div class="form-header">
+                <div class="header-producto">1. Registro</div>
+                
             </div>
-        </section>
+
+            <form class="discount-code-form">
+                <p>Solicitamos únicamente información esencial para su registro</p>
+                <label for="correo">Correo</label>
+                <input type="text" id="correo" name="correo" placeholder="Ej.: ejemplo@mail.com" required>
+            </form>
+
+            <form class="discount-code-form">
+                <label for="nombre">Nombres</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos">
+            </form>
+
+            <form class="discount-code-form">
+                <label for="opciones">Tipo de documento:</label>
+                <select id="opciones" name="opciones" required>
+                  <option value="" disabled selected>Selecciona un tipo de docuemnto</option>
+                  <option value="DNI">DNI</option>
+                  <option value="CE">Carnet de Extranjeria</option>
+                  <option value="Pass">Pasaporte</option>
+                </select>
+            </form>
+
+            <form class="discount-code-form">
+                <label for="Numerodoc">Numero de documento</label>
+                <input type="text" id="Numerodoc" name="Numerodoc">
+            </form>
+
+            <form class="discount-code-form">
+                <label for="movil">Telefono o movil</label>
+                <input type="text" id="movil" name="movil">
+            </form>
+
+            <form class="discount-code-form">
+                <input type="checkbox" id="html" value="html">
+                <label for="html">Acepto el tratamiento de datos para recibir promociones</label>
+            </form>
+
+            <button class="checkout-registro">Registrar</button>
+        </section>    
     </main>
     <footer>
         <section class="col-12 col-lg-3">
@@ -113,7 +136,7 @@
                     <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403275/mastercardMethodFooter.png">
                     <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403273/americanMethodFooter.png">
                     <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403276/pagoEfectivoMethodFooter.png">
-                </div>
+                </div>                
             </div>
 
             <div class="footer-links-group mt-4">
