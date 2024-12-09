@@ -1,0 +1,72 @@
+.flex-login {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    padding: 100px;
+    margin: 50px;
+}
+
+.flex-login-options {
+    border: solid #454343;
+    padding: 50px;
+    margin: 50px;
+    .img-logo {
+        width: 138px;
+        justify-items: center;
+
+        @media (min-width: 768px) {
+            width: 220px;
+        }
+    }
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a1d62;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.social-button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.google {
+    background-color: #fff;
+    color: #4285F4;
+}
+
+.facebook {
+    background-color: #fff;
+    color: #3b5998;
+}

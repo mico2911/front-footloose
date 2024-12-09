@@ -1,0 +1,107 @@
+.titulo-div-home {
+    width: 95%;
+    max-width: 1368px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.descubre-mas {
+    justify-content: center;
+}
+
+.text-and-icons {
+    align-items: center;
+    /* display: inline-flex; */
+    justify-content: center;
+    width: 100%;
+}
+
+.img-in-tittle {
+    width: 30px;
+    height: 30px;
+}
+
+.span-text {
+    display: inline-flex;
+}
+
+.container-descubre-mas {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+.grid-container-descubre-mas {
+    display: grid;
+    background-color: white;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    grid-gap: .8rem;
+    width: 96%;
+    margin: 12px auto;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 2fr 1fr 1fr;
+
+        .first-image {
+            content: url(https://footloose.vtexassets.com/assets/vtex.file-manager-graphql/images/fb5f1bd1-e0db-4a41-be93-53c94ba70f75___2e127713cada5021007ffb7e46b9e27d.png);
+        }
+    }
+}
+
+
+.grid-container-descubre-mas div {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.collage-descubre-mas {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.button-marcas {
+    color: rgb(96, 15, 172);
+    font-size: .8rem;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .3rem .5rem;
+    border: 1px solid #330347;
+    border-radius: 18px;
+}
+
+.flex-container-nuestras-marcas {
+    column-gap: .8rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+    @media (min-width: 768px) {
+    
+        .style-marcas {
+            opacity: 1;
+            max-height: 190px;
+            border: 1px solid #cdcdcd;
+            border-radius: 8px;
+        }
+    }
+}
+
+.style-marcas {
+    max-height: 190px;
+    width: 100%;
+    border: 1px solid #a5a0a8;
+    border-radius: 8px;
+}
