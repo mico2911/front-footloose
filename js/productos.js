@@ -201,7 +201,6 @@ var productos = [
     }
 ];
 
-  
 function llenarProductos () {
   llenarContenido (productos);
 }
@@ -236,7 +235,10 @@ function llenarContenido (products) {
                 </div>
 
                 <div class="product-section">
-                  <button class="btn-add-cart">Añadir al carro</button>
+                  <button class="btn-add-cart" data-codproducto="${products[i].codigo}" data-nombre="${products[i].nombre}"
+                    data-imagen="${products[i].urlImagen}" data-precio="${products[i].precio}" onclick="addToCart(event)">
+                    Añadir al carro
+                  </button>
                 </div>
               </article>
             `;
@@ -279,4 +281,36 @@ function filtrarPuma () {
   let productosParaMujer = productos.filter(p => p.marca == 'Puma');
 
   llenarContenido(productosParaMujer);
+}
+
+function addToCart (e) {
+  let codProducto = e.target.getAttribute('data-codproducto');
+  let nombre = e.target.getAttribute('data-nombre');
+  let imagen = e.target.getAttribute('data-imagen');
+  let precio = e.target.getAttribute('data-precio');
+
+  if (codProducto) {
+    var itemsCartLocalStorage = localStorage.getItem("cart");            
+    var cartArray             = itemsCartLocalStorage ? JSON.parse(itemsCartLocalStorage) : [];
+
+    var index = cartArray.length > 0 ? cartArray.findIndex(cartItem => cartItem.codigo == codProducto) : -1;
+
+    if (index > -1) {
+      // Es un item que ya está en el carrito
+      cartArray[index].cantidad++; 
+    } else {
+      // Se agrega un nuevo item        
+      cartArray.push({
+        codigo   : codProducto,
+        nombre   : nombre,
+        imagen   : imagen,
+        precio   : precio,
+        cantidad : 1
+      })
+    }
+
+    alert('Item añadido al carro de compras');
+    // Se actualiza el carrito de compras
+    localStorage.setItem('cart', JSON.stringify(cartArray));
+  }
 }

@@ -33,32 +33,32 @@ function registrarse () {
         if (usuario && usuario.length > 0) {
             console.log('correo registrado');
         } else {
-            usuarios.push({
+            var usuariosLocalStorage = localStorage.getItem("usuarios");
+            var usuariosArray        = usuariosLocalStorage ? JSON.parse(usuariosLocalStorage) : usuarios;
+
+            usuariosArray.push({
                 correo : correo,
                 nombre : nombres,
                 apellido : apellidos,
                 password : password
             })
+
+            localStorage.setItem('usuarios', JSON.stringify(usuariosArray));
         }
     }
-
-    console.log(usuarios);
 }
 
 function iniciarSesion () {
-
-    console.log(usuarios);
-    
     var correo = document.querySelector('.email-input').value;
     var password = document.querySelector('.pwd-input').value;
 
     if (correo && password) {
-        const usuario = usuarios.filter(us => us.correo == correo && us.password == password);
-
-        console.log(usuario);
+        var usuariosLocalStorage = localStorage.getItem("usuarios");
+        var usuariosArray        = usuariosLocalStorage ? JSON.parse(usuariosLocalStorage) : usuarios;
+        const usuario = usuariosArray.filter(us => us.correo == correo && us.password == password);
 
         if (usuario && usuario.length > 0) {
-            console.log('exitoso');
+            localStorage.setItem('autenticado', true);
         }
     }
 }
