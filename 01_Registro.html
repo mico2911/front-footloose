@@ -62,45 +62,26 @@
                 
             </div>
 
-            <form class="discount-code-form">
-                <p>Solicitamos únicamente información esencial para su registro</p>
-                <label for="correo">Correo</label>
-                <input type="text" id="correo" name="correo" placeholder="Ej.: ejemplo@mail.com" required>
-            </form>
+            <form class="register-form">
+                <section class="form-section">
+                    <label for="correo">Correo</label>
+                    <input type="text" id="correo" name="correo" placeholder="Ej.: ejemplo@mail.com" required>
+                </section>
+                <section class="form-section">
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" name="nombre">
+                </section>
+                <section class="form-section">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </section>
+                <section class="form-section">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password">
+                </section>
 
-            <form class="discount-code-form">
-                <label for="nombre">Nombres</label>
-                <input type="text" id="nombre" name="nombre">
-                <label for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos" name="apellidos">
+                <button class="checkout-registro">Registrar</button>
             </form>
-
-            <form class="discount-code-form">
-                <label for="opciones">Tipo de documento:</label>
-                <select id="opciones" name="opciones" required>
-                  <option value="" disabled selected>Selecciona un tipo de docuemnto</option>
-                  <option value="DNI">DNI</option>
-                  <option value="CE">Carnet de Extranjeria</option>
-                  <option value="Pass">Pasaporte</option>
-                </select>
-            </form>
-
-            <form class="discount-code-form">
-                <label for="Numerodoc">Numero de documento</label>
-                <input type="text" id="Numerodoc" name="Numerodoc">
-            </form>
-
-            <form class="discount-code-form">
-                <label for="movil">Telefono o movil</label>
-                <input type="text" id="movil" name="movil">
-            </form>
-
-            <form class="discount-code-form">
-                <input type="checkbox" id="html" value="html">
-                <label for="html">Acepto el tratamiento de datos para recibir promociones</label>
-            </form>
-
-            <button class="checkout-registro">Registrar</button>
         </section>    
     </main>
     <footer>
