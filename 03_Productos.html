@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link data-react-helmet="true" href="https://footloose.vteximg.com.br/arquivos/foo-favicon-16x16.png?v=636778449822470000" rel="icon" type="png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Footloose</title>
+    <link rel="stylesheet" href="estilos/general.css">
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/productos.css">
+    <script src="js/productos.js"></script>
+</head>
+<body>
+    <header>
+        <img class="w-100 d-none d-lg-block" alt="banner-desktop-header" src="https://footloose.vtexassets.com/assets/vtex.file-manager-graphql/images/314ded91-5efe-480b-a3c7-857c2ea89d00___0c9e0dba51de8e14769e10f3484c7b1b.png">
+        <img class="w-100 d-block d-lg-none" alt="banner-mobile-header" src="https://footloose.vtexassets.com/assets/vtex.file-manager-graphql/images/9087a548-5072-4646-827a-c1e4ac607d7a___af42c55fdad96be7722c27e41b880b86.png">
+
+        <section class="header-content w-100">
+            <a class="home" href="/03_Home.html">
+                <img class="img-logo"
+                  src="https://footloose.vtexassets.com/arquivos/ids/1369612/footloose-logo.svg" alt="Logo de Footlose">
+            </a>
+
+            <div class="input-search-wrapper">
+                <input type="text" placeholder="¿Qué estas buscando?">
+            </div>
+
+            <nav class="profile-nav">
+                <a class="my-account" href="/02_InicioSesion.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Mi cuenta</span>
+                </a>
+
+                <a class="wishlist" href="/02_InicioSesion.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Mis favoritos</span>
+                </a>
+
+                <a class="carrito" href="/04_Carrito.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </nav>
+        </section>
+
+        <section class="categories-nav text-center">
+            <nav class="d-flex justify-content-between">
+                <a href="" style="color: white;">MUJER</a>
+                <a href="" style="color: white;">HOMBRE</a>
+                <a href="" style="color: white;">INFANTIL</a>
+                <a href="" style="color: white;">ADIDAS</a>
+                <a href="" style="color: white;">PUMA</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="productos-wrapper"></section>
+    </main>
+    <footer>
+        <section class="col-12 col-lg-3">
+            <div class="footer-links-group">
+                <h3 class="subtitle"> CENTRO DE SOPORTE </h3>
+                <ul class="listado-enlaces">
+                    <a href="" style="color: #4a1d62;">Atención al cliente</a>
+                    <a href="" style="color: #4a1d62;">Retiro en tienda</a>
+                    <a href="" style="color: #4a1d62;">Seguimiento Pedido</a>
+                    <a href="" style="color: #4a1d62;">Cambios y devoluciones</a>
+                    <a href="" style="color: #4a1d62;">Formas de pago</a>
+                    <a href="" style="color: #4a1d62;">Preguntas frecuentes</a>
+                </ul>
+            </div>
+        </section>
+        <section class="col-12 col-lg-3">
+            <div class="footer-links-group">
+                <h3 class="subtitle"> SOBRE FOOTLOOSE </h3>
+                <img class="logo-sostenible" src="https://footloose.vtexassets.com/assets/vtex.file-manager-graphql/images/5ca82088-fc96-4e36-afe1-beef07d3de45___a63b2378e5107bb40f34cd9e0000e2c1.png" alt="">
+                <ul class="listado-enlaces">
+                    <a href="" style="color: #4a1d62;">¿Quiénes somos?</a>
+                    <a href="" style="color: #4a1d62;">Nuestra historia</a>
+                    <a href="" style="color: #4a1d62;">Catálogo Footlose</a>
+                </ul>
+            </div>
+        </section>        
+        <section class="col-12 col-lg-4">
+            <div class="footer-links-group">
+                <h3 class="subtitle"> MEDIOS DE PAGO </h3>
+                <div class="medios-pago">
+                    <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403277/visaMethodFooter.png">
+                    <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403275/mastercardMethodFooter.png">
+                    <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403273/americanMethodFooter.png">
+                    <img class="img-medio-pago" src="https://footloose.vtexassets.com/arquivos/ids/1403276/pagoEfectivoMethodFooter.png">
+                </div>                
+            </div>
+
+            <div class="footer-links-group mt-4">
+                <h3 class="subtitle"> CONTÁCTANOS </h3>
+                <span style="color: #4a1d62;">Calle Vulcano 176 Ate, Lima-Peru</span>
+                <span style="color: #4a1d62;">atencionalcliente@footloose.pe</span>
+                <span style="color: #4a1d62;">01 7482402</span>
+                <span style="color: #4a1d62;">936121553</span>
+                <span style="color: #4a1d62;">Lunes a Sábado de 9am - 8pm</span>
+
+
+                <nav class="social-network-nav">
+                    <a href="https://www.facebook.com/footloose.pe" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+    
+                    <a href="https://www.instagram.com/footloose.pe" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+    
+                    <a href="https://x.com/FootloosePeru" target="_blank">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=51936121553&text=Hola%20%F0%9F%91%8B.%20Quisiera%20saber%20sobre%20uno%20de%20los%20productos%20que%20tienen%20en%20su%20p%C3%A1gina%20web.%20%F0%9F%9B%92%F0%9F%A4%97" target="_blank">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                </nav>              
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
