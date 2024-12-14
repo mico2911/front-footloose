@@ -203,28 +203,36 @@ var productos = [
 
   
 function llenarProductos () {
-    let html = '';
+  llenarContenido (productos);
+}
 
-    if (productos.length > 0) {
+document.addEventListener('DOMContentLoaded', function () {
+    llenarProductos();
+});
+
+function llenarContenido (products) {
+  let html = '';
+
+    if (products.length > 0) {
         // Empiezo a llenar los productos
 
         // Inicio de etiqueta para listado
         html = `<div class="products-list">`
 
-        for (let i = 0; i < productos.length; i++) {
+        for (let i = 0; i < products.length; i++) {
             html += `
               <article class="product">
                 <div class="image-product">
-                  <img src="${productos[i].urlImagen}" alt="Imagen de ${productos[i].nombre}">
+                  <img src="${products[i].urlImagen}" alt="Imagen de ${products[i].nombre}">
                 </div>
 
                 <div class="name-product">
-                  <span>${productos[i].nombre}</span>
+                  <span>${products[i].nombre}</span>
                 </div>
 
                 <div class="product-section">
                   <span>Precio: </span>
-                  <span class="price-text"> S/ ${productos[i].precio}</span>
+                  <span class="price-text"> S/ ${products[i].precio}</span>
                 </div>
 
                 <div class="product-section">
@@ -243,6 +251,32 @@ function llenarProductos () {
     document.querySelector('.productos-wrapper').innerHTML = html;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    llenarProductos();
-});
+function filtrarMujer () {
+    let productosParaMujer = productos.filter(p => p.categoria == 'Mujer');
+
+    llenarContenido(productosParaMujer);
+}
+
+function filtrarHombre () {
+  let productosParaMujer = productos.filter(p => p.categoria == 'Hombre');
+
+  llenarContenido(productosParaMujer);
+}
+
+function filtrarInfantil () {
+  let productosParaMujer = productos.filter(p => p.categoria == 'Infantil');
+
+  llenarContenido(productosParaMujer);
+}
+
+function filtrarAdidas () {
+  let productosParaMujer = productos.filter(p => p.marca == 'Adidas');
+
+  llenarContenido(productosParaMujer);
+}
+
+function filtrarPuma () {
+  let productosParaMujer = productos.filter(p => p.marca == 'Puma');
+
+  llenarContenido(productosParaMujer);
+}
