@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="estilos/header.css">
     <link rel="stylesheet" href="estilos/footer.css">
     <link rel="stylesheet" href="estilos/login.css">
+    <script src="js/auth.js"></script>
 </head>
 <body>
     <header>
@@ -63,9 +64,9 @@
                 </a>
 
                 <form>
-                    <input type="email" id="email" name="email" placeholder="Ej.: ejemplo@mail.com" required>
-                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
-                    <button type="submit">Entrar</button>
+                    <input type="email" id="email" name="email" class="email-input" placeholder="Ej.: ejemplo@mail.com" required>
+                    <input type="password" id="password" name="password" class="pwd-input" placeholder="Contraseña" required>
+                    <button type="button" onclick="iniciarSesion()">Entrar</button>
                     <p>¿No tienes cuenta? <a href="/01_Registro.html">Regístrate</a></p>
                 </form>
             </div>
