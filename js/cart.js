@@ -7,6 +7,7 @@ function llenarCarrito () {
     var cartArray        = cartLocalStorage ? JSON.parse(cartLocalStorage) : [];
 
     let html = '';
+    let montoTotal = 0;
 
     if (cartArray.length > 0) {
         for (let i = 0; i < cartArray.length; i++) {
@@ -30,10 +31,24 @@ function llenarCarrito () {
                     </div>
                 </article>
             `;
+
+            montoTotal += cartArray[i].precio * cartArray[i].cantidad;
         }
 
         document.querySelector('.article-list').innerHTML = html;
+
+        actualizarMonto(montoTotal);
     } else {
         document.querySelector('.carrito-contenedor').innerHTML = 'No hay productos en el carrito';
     }
+}
+
+function actualizarMonto(montoTotal) {
+    document.querySelector('.subtotal-price').innerHTML = 'S/ ' + montoTotal;
+    document.querySelector('.total-price').innerHTML = 'S/ ' + montoTotal;
+}
+
+function finalizarCompra() {
+    localStorage.removeItem('cart');
+    window.location.href = "/05_FinalizarPedido.html";
 }
