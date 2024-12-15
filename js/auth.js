@@ -59,7 +59,36 @@ function iniciarSesion () {
 
         if (usuario && usuario.length > 0) {
             localStorage.setItem('autenticado', true);
+            localStorage.setItem('username', usuario[0].nombre);
+            location.reload();
         }
     }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    evaluarSesion();
+});
+
+function evaluarSesion() {
+    var autenticado = localStorage.getItem("autenticado");
+
+    if (autenticado && autenticado == 'true') {
+        let html = '';
+        html += `
+            <h3>Bienvenido ${localStorage.getItem("username")}</h3>
+
+            <button onclick="logout()">
+                Cerrar sesión
+            </button>            
+        `;
+
+        document.querySelector('.myprofile-content').innerHTML = html;
+    }
+}
+
+function logout() {
+    localStorage.removeItem("autenticado");
+    localStorage.removeItem("username");
+    location.reload();
 }
   
