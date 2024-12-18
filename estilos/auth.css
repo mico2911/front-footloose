@@ -5,14 +5,35 @@ body {
     background-color: #f4f4f4;
 }
 
-.ingreso-registro {
+.form-container {
     display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color:  #fff;
     padding: 20px;
-    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
 
 .form-items {
     background-color: #fff;
@@ -23,8 +44,8 @@ body {
 }
 
 
-
 /* Encabezados de las secciones */
+
 .form-header {
     display: flex;
     justify-content: space-between;
@@ -37,27 +58,6 @@ body {
     font-weight: bold;
     padding: 15px;
     height: auto;
-}
-
-
-/* .discount-code-form {
-    margin: 20px 0;
-    color: #3E1151;
-    font-size: 12px;
-} */
-
-.discount-code-form label {
-    display: block;
-    margin-bottom: 5px;
-   
-}
-
-.discount-code-form input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #3E1151;
-    border-radius: 5px 0 0 5px;
-    border-right: none;
 }
 
 
