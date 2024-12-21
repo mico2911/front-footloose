@@ -44,7 +44,7 @@ function registrarse () {
             })
 
             localStorage.setItem('usuarios', JSON.stringify(usuariosArray));
-            window.location.href = "/02_InicioSesion.html";
+            window.location.href = "/front-footloose/02_InicioSesion.html";
         }
     }
 }
